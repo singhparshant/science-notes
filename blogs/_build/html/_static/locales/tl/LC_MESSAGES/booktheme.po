@@ -8,6 +8,7 @@ msgstr ""
 "Language: tl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+<<<<<<< HEAD
 msgid "By"
 msgstr "Ni"
 
@@ -19,10 +20,15 @@ msgstr "I-edit ang pahinang ito"
 
 msgid "Last updated on"
 msgstr "Huling na-update noong"
+=======
+msgid "Copyright"
+msgstr "Copyright"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "Print to PDF"
 msgstr "I-print sa PDF"
 
+<<<<<<< HEAD
 msgid "suggest edit"
 msgstr "iminumungkahi i-edit"
 
@@ -52,15 +58,68 @@ msgstr "Mag-download ng file ng notebook"
 
 msgid "Copyright"
 msgstr "Copyright"
+=======
+msgid "Edit this page"
+msgstr "I-edit ang pahinang ito"
+
+msgid "suggest edit"
+msgstr "iminumungkahi i-edit"
+
+msgid "Sphinx Book Theme"
+msgstr "Tema ng Sphinx Book"
+
+msgid "open issue"
+msgstr "bukas na isyu"
+
+msgid "By the"
+msgstr "Sa pamamagitan ng"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "Theme by the"
 msgstr "Tema ng"
 
+<<<<<<< HEAD
 msgid "Open an issue"
 msgstr "Magbukas ng isyu"
+=======
+msgid "Download notebook file"
+msgstr "Mag-download ng file ng notebook"
+
+msgid "Toggle navigation"
+msgstr "I-toggle ang pag-navigate"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "next page"
 msgstr "Susunod na pahina"
 
+<<<<<<< HEAD
 msgid "Launch"
 msgstr "Ilunsad"
+=======
+msgid "Source repository"
+msgstr "Pinagmulan ng imbakan"
+
+msgid "Last updated on"
+msgstr "Huling na-update noong"
+
+msgid "Search this book..."
+msgstr "Maghanap sa librong ito ..."
+
+msgid "Download this page"
+msgstr "I-download ang pahinang ito"
+
+msgid "Launch"
+msgstr "Ilunsad"
+
+msgid "Download source file"
+msgstr "Mag-download ng file ng pinagmulan"
+
+msgid "previous page"
+msgstr "Nakaraang pahina"
+
+msgid "By"
+msgstr "Ni"
+
+msgid "Open an issue"
+msgstr "Magbukas ng isyu"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80

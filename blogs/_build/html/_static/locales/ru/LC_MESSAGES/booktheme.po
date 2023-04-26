@@ -8,6 +8,7 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+<<<<<<< HEAD
 msgid "By"
 msgstr "По"
 
@@ -28,10 +29,15 @@ msgstr "Редактировать эту страницу"
 
 msgid "Last updated on"
 msgstr "Последнее обновление"
+=======
+msgid "Copyright"
+msgstr "авторское право"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "Print to PDF"
 msgstr "Распечатать в PDF"
 
+<<<<<<< HEAD
 msgid "suggest edit"
 msgstr "предложить редактировать"
 
@@ -61,15 +67,80 @@ msgstr "Скачать файл записной книжки"
 
 msgid "Copyright"
 msgstr "авторское право"
+=======
+msgid "Edit this page"
+msgstr "Редактировать эту страницу"
+
+msgid "suggest edit"
+msgstr "предложить редактировать"
+
+msgid "Sphinx Book Theme"
+msgstr "Тема книги Сфинкс"
+
+msgid "open issue"
+msgstr "открытый вопрос"
+
+msgid "By the"
+msgstr "Посредством"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "Theme by the"
 msgstr "Тема от"
 
+<<<<<<< HEAD
 msgid "Open an issue"
 msgstr "Открыть вопрос"
+=======
+msgid "Download notebook file"
+msgstr "Скачать файл записной книжки"
+
+msgid "Toggle navigation"
+msgstr "Переключить навигацию"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "next page"
 msgstr "Следующая страница"
 
+<<<<<<< HEAD
 msgid "Launch"
 msgstr "Запуск"
+=======
+msgid "Contents"
+msgstr "Содержание"
+
+msgid "Source repository"
+msgstr "Исходный репозиторий"
+
+msgid "Search the docs ..."
+msgstr "Искать в документах ..."
+
+msgid "Last updated on"
+msgstr "Последнее обновление"
+
+msgid "Search this book..."
+msgstr "Искать в этой книге ..."
+
+msgid "Download this page"
+msgstr "Загрузите эту страницу"
+
+msgid "Launch"
+msgstr "Запуск"
+
+msgid "Download source file"
+msgstr "Скачать исходный файл"
+
+msgid "previous page"
+msgstr "Предыдущая страница"
+
+msgid "By"
+msgstr "По"
+
+msgid "Open an issue"
+msgstr "Открыть вопрос"
+
+msgid "Fullscreen mode"
+msgstr "Полноэкранный режим"
+
+msgid "repository"
+msgstr "хранилище"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80

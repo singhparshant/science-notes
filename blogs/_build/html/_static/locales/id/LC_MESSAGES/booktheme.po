@@ -8,6 +8,7 @@ msgstr ""
 "Language: id\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+<<<<<<< HEAD
 msgid "By"
 msgstr "Oleh"
 
@@ -28,10 +29,15 @@ msgstr "Edit halaman ini"
 
 msgid "Last updated on"
 msgstr "Terakhir diperbarui saat"
+=======
+msgid "Copyright"
+msgstr "hak cipta"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "Print to PDF"
 msgstr "Cetak ke PDF"
 
+<<<<<<< HEAD
 msgid "suggest edit"
 msgstr "menyarankan edit"
 
@@ -61,15 +67,80 @@ msgstr "Unduh file notebook"
 
 msgid "Copyright"
 msgstr "hak cipta"
+=======
+msgid "Edit this page"
+msgstr "Edit halaman ini"
+
+msgid "suggest edit"
+msgstr "menyarankan edit"
+
+msgid "Sphinx Book Theme"
+msgstr "Tema Buku Sphinx"
+
+msgid "open issue"
+msgstr "masalah terbuka"
+
+msgid "By the"
+msgstr "Oleh"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "Theme by the"
 msgstr "Tema oleh"
 
+<<<<<<< HEAD
 msgid "Open an issue"
 msgstr "Buka masalah"
+=======
+msgid "Download notebook file"
+msgstr "Unduh file notebook"
+
+msgid "Toggle navigation"
+msgstr "Alihkan navigasi"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "next page"
 msgstr "halaman selanjutnya"
 
+<<<<<<< HEAD
 msgid "Launch"
 msgstr "Meluncurkan"
+=======
+msgid "Contents"
+msgstr "Isi"
+
+msgid "Source repository"
+msgstr "Repositori sumber"
+
+msgid "Search the docs ..."
+msgstr "Telusuri dokumen ..."
+
+msgid "Last updated on"
+msgstr "Terakhir diperbarui saat"
+
+msgid "Search this book..."
+msgstr "Telusuri buku ini ..."
+
+msgid "Download this page"
+msgstr "Unduh halaman ini"
+
+msgid "Launch"
+msgstr "Meluncurkan"
+
+msgid "Download source file"
+msgstr "Unduh file sumber"
+
+msgid "previous page"
+msgstr "halaman sebelumnya"
+
+msgid "By"
+msgstr "Oleh"
+
+msgid "Open an issue"
+msgstr "Buka masalah"
+
+msgid "Fullscreen mode"
+msgstr "Mode layar penuh"
+
+msgid "repository"
+msgstr "gudang"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80

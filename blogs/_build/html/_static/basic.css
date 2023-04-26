@@ -4,7 +4,11 @@
  *
  * Sphinx stylesheet -- basic theme.
  *
+<<<<<<< HEAD
  * :copyright: Copyright 2007-2022 by the Sphinx team, see AUTHORS.
+=======
+ * :copyright: Copyright 2007-2021 by the Sphinx team, see AUTHORS.
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
  * :license: BSD, see LICENSE for details.
  *
  */
@@ -222,7 +226,11 @@ table.modindextable td {
 /* -- general body styles --------------------------------------------------- */
 
 div.body {
+<<<<<<< HEAD
     min-width: 360px;
+=======
+    min-width: 450px;
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
     max-width: 800px;
 }
 
@@ -237,6 +245,19 @@ a.headerlink {
     visibility: hidden;
 }
 
+<<<<<<< HEAD
+=======
+a.brackets:before,
+span.brackets > a:before{
+    content: "[";
+}
+
+a.brackets:after,
+span.brackets > a:after {
+    content: "]";
+}
+
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 h1:hover > a.headerlink,
 h2:hover > a.headerlink,
 h3:hover > a.headerlink,
@@ -324,16 +345,22 @@ aside.sidebar {
 p.sidebar-title {
     font-weight: bold;
 }
+<<<<<<< HEAD
 nav.contents,
 aside.topic,
+=======
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 div.admonition, div.topic, blockquote {
     clear: left;
 }
 
 /* -- topics ---------------------------------------------------------------- */
+<<<<<<< HEAD
 nav.contents,
 aside.topic,
+=======
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 div.topic {
     border: 1px solid #ccc;
@@ -373,9 +400,12 @@ div.body p.centered {
 
 div.sidebar > :last-child,
 aside.sidebar > :last-child,
+<<<<<<< HEAD
 nav.contents > :last-child,
 aside.topic > :last-child,
 
+=======
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 div.topic > :last-child,
 div.admonition > :last-child {
     margin-bottom: 0;
@@ -383,9 +413,12 @@ div.admonition > :last-child {
 
 div.sidebar::after,
 aside.sidebar::after,
+<<<<<<< HEAD
 nav.contents::after,
 aside.topic::after,
 
+=======
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 div.topic::after,
 div.admonition::after,
 blockquote::after {
@@ -428,6 +461,13 @@ table.docutils td, table.docutils th {
     border-bottom: 1px solid #aaa;
 }
 
+<<<<<<< HEAD
+=======
+table.footnote td, table.footnote th {
+    border: 0 !important;
+}
+
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 th {
     text-align: left;
     padding-right: 5px;
@@ -611,7 +651,10 @@ ul.simple p {
     margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 /* Docutils 0.17 and older (footnotes & citations) */
+=======
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 dl.footnote > dt,
 dl.citation > dt {
     float: left;
@@ -629,6 +672,7 @@ dl.citation > dd:after {
     clear: both;
 }
 
+<<<<<<< HEAD
 /* Docutils 0.18+ (footnotes & citations) */
 aside.footnote > span,
 div.citation > span {
@@ -656,6 +700,8 @@ div.citation > p:last-of-type:after {
 
 /* Footnotes & citations ends */
 
+=======
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 dl.field-list {
     display: grid;
     grid-template-columns: fit-content(30%) auto;
@@ -781,7 +827,10 @@ span.pre {
     -ms-hyphens: none;
     -webkit-hyphens: none;
     hyphens: none;
+<<<<<<< HEAD
     white-space: nowrap;
+=======
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 }
 
 div[class*="highlight-"] {

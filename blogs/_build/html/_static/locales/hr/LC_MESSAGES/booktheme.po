@@ -8,6 +8,7 @@ msgstr ""
 "Language: hr\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+<<<<<<< HEAD
 msgid "By"
 msgstr "Po"
 
@@ -28,10 +29,15 @@ msgstr "Uredite ovu stranicu"
 
 msgid "Last updated on"
 msgstr "Posljednje ažuriranje:"
+=======
+msgid "Copyright"
+msgstr "Autorska prava"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "Print to PDF"
 msgstr "Ispis u PDF"
 
+<<<<<<< HEAD
 msgid "suggest edit"
 msgstr "predloži uređivanje"
 
@@ -61,15 +67,80 @@ msgstr "Preuzmi datoteku bilježnice"
 
 msgid "Copyright"
 msgstr "Autorska prava"
+=======
+msgid "Edit this page"
+msgstr "Uredite ovu stranicu"
+
+msgid "suggest edit"
+msgstr "predloži uređivanje"
+
+msgid "Sphinx Book Theme"
+msgstr "Tema knjige Sphinx"
+
+msgid "open issue"
+msgstr "otvoreno izdanje"
+
+msgid "By the"
+msgstr "Od strane"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "Theme by the"
 msgstr "Tema autora"
 
+<<<<<<< HEAD
 msgid "Open an issue"
 msgstr "Otvorite izdanje"
+=======
+msgid "Download notebook file"
+msgstr "Preuzmi datoteku bilježnice"
+
+msgid "Toggle navigation"
+msgstr "Uključi / isključi navigaciju"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "next page"
 msgstr "sljedeća stranica"
 
+<<<<<<< HEAD
 msgid "Launch"
 msgstr "Pokrenite"
+=======
+msgid "Contents"
+msgstr "Sadržaj"
+
+msgid "Source repository"
+msgstr "Izvorno spremište"
+
+msgid "Search the docs ..."
+msgstr "Pretražite dokumente ..."
+
+msgid "Last updated on"
+msgstr "Posljednje ažuriranje:"
+
+msgid "Search this book..."
+msgstr "Pretražite ovu knjigu ..."
+
+msgid "Download this page"
+msgstr "Preuzmite ovu stranicu"
+
+msgid "Launch"
+msgstr "Pokrenite"
+
+msgid "Download source file"
+msgstr "Preuzmi izvornu datoteku"
+
+msgid "previous page"
+msgstr "Prethodna stranica"
+
+msgid "By"
+msgstr "Po"
+
+msgid "Open an issue"
+msgstr "Otvorite izdanje"
+
+msgid "Fullscreen mode"
+msgstr "Način preko cijelog zaslona"
+
+msgid "repository"
+msgstr "spremište"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80

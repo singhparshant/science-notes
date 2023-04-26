@@ -20,7 +20,11 @@ const messages = {
   },
   'fr' : {
     'copy': 'Copier',
+<<<<<<< HEAD
     'copy_to_clipboard': 'Copié dans le presse-papier',
+=======
+    'copy_to_clipboard': 'Copier dans le presse-papier',
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
     'copy_success': 'Copié !',
     'copy_failure': 'Échec de la copie',
   },
@@ -224,7 +228,11 @@ var copyTargetText = (trigger) => {
   var target = document.querySelector(trigger.attributes['data-clipboard-target'].value);
 
   // get filtered text
+<<<<<<< HEAD
   let exclude = '.linenos, .gp';
+=======
+  let exclude = '.linenos';
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
   let text = filterText(target, exclude);
   return formatCopyText(text, '', false, true, true, true, '', '')

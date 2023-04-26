@@ -8,6 +8,7 @@ msgstr ""
 "Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+<<<<<<< HEAD
 msgid "By"
 msgstr "Tarafından"
 
@@ -28,10 +29,15 @@ msgstr "Bu sayfayı düzenle"
 
 msgid "Last updated on"
 msgstr "Son güncelleme tarihi"
+=======
+msgid "Copyright"
+msgstr "Telif hakkı"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "Print to PDF"
 msgstr "PDF olarak yazdır"
 
+<<<<<<< HEAD
 msgid "suggest edit"
 msgstr "düzenleme öner"
 
@@ -61,15 +67,80 @@ msgstr "Defter dosyasını indirin"
 
 msgid "Copyright"
 msgstr "Telif hakkı"
+=======
+msgid "Edit this page"
+msgstr "Bu sayfayı düzenle"
+
+msgid "suggest edit"
+msgstr "düzenleme öner"
+
+msgid "Sphinx Book Theme"
+msgstr "Sfenks Kitap Teması"
+
+msgid "open issue"
+msgstr "Açık konu"
+
+msgid "By the"
+msgstr "Tarafından"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "Theme by the"
 msgstr "Tarafından tema"
 
+<<<<<<< HEAD
 msgid "Open an issue"
 msgstr "Bir sorunu açın"
+=======
+msgid "Download notebook file"
+msgstr "Defter dosyasını indirin"
+
+msgid "Toggle navigation"
+msgstr "Gezinmeyi değiştir"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
 
 msgid "next page"
 msgstr "sonraki Sayfa"
 
+<<<<<<< HEAD
 msgid "Launch"
 msgstr "Başlatmak"
+=======
+msgid "Contents"
+msgstr "İçindekiler"
+
+msgid "Source repository"
+msgstr "Kaynak kod deposu"
+
+msgid "Search the docs ..."
+msgstr "Belgelerde ara ..."
+
+msgid "Last updated on"
+msgstr "Son güncelleme tarihi"
+
+msgid "Search this book..."
+msgstr "Bu kitabı ara ..."
+
+msgid "Download this page"
+msgstr "Bu sayfayı indirin"
+
+msgid "Launch"
+msgstr "Başlatmak"
+
+msgid "Download source file"
+msgstr "Kaynak dosyayı indirin"
+
+msgid "previous page"
+msgstr "önceki sayfa"
+
+msgid "By"
+msgstr "Tarafından"
+
+msgid "Open an issue"
+msgstr "Bir sorunu açın"
+
+msgid "Fullscreen mode"
+msgstr "Tam ekran modu"
+
+msgid "repository"
+msgstr "depo"
+>>>>>>> 4429ea48da16f54647130777743f59f911dbcf80
