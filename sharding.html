@@ -576,7 +576,7 @@ title="Print to PDF"
 <p>There are 2 common techniques blockchains implement to improve throughput:</p>
 <ul class="simple">
 <li><p>Delegate all the computation to a small set of powerful nodes. (eg - Algorand, Solana)</p></li>
-<li><p>Each node in the network only do a subset of the total amount of work (Sharding). Ethereum, Near, Ziliqa use this technique.</p></li>
+<li><p>Each node in the network only do a subset of the total amount of work (Sharding). Ethereum, <a class="reference external" href="https://near.org/">Near</a>, <a class="reference external" href="https://hedera.com/">Hedera</a> use this technique.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -591,7 +591,14 @@ title="Print to PDF"
 </section>
 <section id="different-sharding-approaches">
 <h2>Different Sharding Approaches<a class="headerlink" href="#different-sharding-approaches" title="Permalink to this headline">#</a></h2>
-<p>There have been a few proposed sharded blockchains such as Elastico <span id="id1">[<a class="reference internal" href="#id60" title="Loi Luu, Viswesh Narayanan, Chaodong Zheng, Kunal Baweja, Seth Gilbert, and Prateek Saxena. A secure sharding protocol for open blockchains. In Proceedings of the 2016 ACM SIGSAC conference on computer and communications security, 17–30. 2016.">LNZ+16</a>]</span>, OmniLedger <span id="id2">[<a class="reference internal" href="#id58" title="Eleftherios Kokoris-Kogias, Philipp Jovanovic, Linus Gasser, Nicolas Gailly, Ewa Syta, and Bryan Ford. Omniledger: a secure, scale-out, decentralized ledger via sharding. In 2018 IEEE Symposium on Security and Privacy (SP), 583–598. IEEE, 2018.">KKJG+18</a>]</span> and RapidChain <span id="id3">[<a class="reference internal" href="#id59" title="Mahdi Zamani, Mahnush Movahedi, and Mariana Raykova. Rapidchain: scaling blockchain via full sharding. In Proceedings of the 2018 ACM SIGSAC conference on computer and communications security, 931–948. 2018.">ZMR18</a>]</span>. Nonetheless, such systems are predominantly constrained to cryptocurrency use cases in open (or permissionless) environments. Due to their reliance on the unspent transaction output (UTXO) model—a simplistic data structure—these methods lack generalizability for applications beyond Bitcoin <span id="id4">[<a class="reference internal" href="#id57" title="Hung Dang, Tien Tuan Anh Dinh, Dumitrel Loghin, Ee-Chien Chang, Qian Lin, and Beng Chin Ooi. Towards scaling blockchain systems via sharding. In Proceedings of the 2019 international conference on management of data, 123–140. 2019.">DDL+19</a>]</span>. So we will focus on more general purpose blockchains such as Ethereum and Near Blockchain.</p>
+<p>Huang et. al. <span id="id1">[<a class="reference internal" href="#id71" title="Huawei Huang, Xiaowen Peng, Jianzhou Zhan, Shenyang Zhang, Yue Lin, Zibin Zheng, and Song Guo. Brokerchain: a cross-shard blockchain protocol for account/balance-based state sharding. In IEEE INFOCOM 2022-IEEE Conference on Computer Communications, 1968–1977. IEEE, 2022.">HPZ+22</a>]</span> proposed a new cross-shard blockchain protocol called BrokerChain that aims to address the issue of hot shards and reduce the number of cross-shard transactions and outperforms other state-of-the-art sharding methods in terms of transaction throughput, confirmation latency, queue size of transaction pool.
+Tennakoon et. al. <span id="id2">[<a class="reference internal" href="#id72" title="Deepal Tennakoon and Vincent Gramoli. Dynamic blockchain sharding. In 5th International Symposium on Foundations and Applications of Blockchain 2022 (FAB 2022). Schloss Dagstuhl-Leibniz-Zentrum für Informatik, 2022.">TG22</a>]</span> propose a blockchain sharding protocl with dynamic sharding where
+smart contract invocations stored in blocks reconfigure the sharding. This protocol is effective in the sense that it improves the efficiency of blockchain by preventing resource wastage by closing the shard that are not processig as many transactions or are idle.
+There have been a few proposed sharded blockchains such as Elastico <span id="id3">[<a class="reference internal" href="#id64" title="Loi Luu, Viswesh Narayanan, Chaodong Zheng, Kunal Baweja, Seth Gilbert, and Prateek Saxena. A secure sharding protocol for open blockchains. In Proceedings of the 2016 ACM SIGSAC conference on computer and communications security, 17–30. 2016.">LNZ+16</a>]</span>, OmniLedger <span id="id4">[<a class="reference internal" href="#id62" title="Eleftherios Kokoris-Kogias, Philipp Jovanovic, Linus Gasser, Nicolas Gailly, Ewa Syta, and Bryan Ford. Omniledger: a secure, scale-out, decentralized ledger via sharding. In 2018 IEEE Symposium on Security and Privacy (SP), 583–598. IEEE, 2018.">KKJG+18</a>]</span> and RapidChain <span id="id5">[<a class="reference internal" href="#id63" title="Mahdi Zamani, Mahnush Movahedi, and Mariana Raykova. Rapidchain: scaling blockchain via full sharding. In Proceedings of the 2018 ACM SIGSAC conference on computer and communications security, 931–948. 2018.">ZMR18</a>]</span>. Nonetheless, such systems are predominantly constrained to cryptocurrency use cases in open (or permissionless) environments. Due to their reliance on the unspent transaction output (UTXO) model—a simplistic data structure—these methods lack generalizability for applications beyond Bitcoin <span id="id6">[<a class="reference internal" href="#id61" title="Hung Dang, Tien Tuan Anh Dinh, Dumitrel Loghin, Ee-Chien Chang, Qian Lin, and Beng Chin Ooi. Towards scaling blockchain systems via sharding. In Proceedings of the 2019 international conference on management of data, 123–140. 2019.">DDL+19</a>]</span>. So we will focus on more general purpose blockchains such as Ethereum and Near Blockchain.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Hot Shards</strong></p>
+<p>Hot shards are shards that are experiencing a high volume of transactions, which can negatively impact the performance and security of the blockchain system.</p>
+</aside>
 <figure class="align-default" id="sharding-eth-near">
 <a class="reference internal image-reference" href="_images/sharding.png"><img alt="_images/sharding.png" src="_images/sharding.png" style="width: 720px; height: 330px;" /></a>
 <figcaption>
@@ -600,11 +607,11 @@ title="Print to PDF"
 </figure>
 <section id="sharding-in-ethereum">
 <h3>Sharding in Ethereum<a class="headerlink" href="#sharding-in-ethereum" title="Permalink to this headline">#</a></h3>
-<p>In ethereum, data is distributed among several shard chains ([<a class="reference internal" href="#sharding-eth-near"><span class="std std-numref">Fig. 4</span></a>]) and each of these shard chains submit a record of transactions to the beacon chain or coordinating layer which coordinates and manages the shards by maintaining synchronization and ensuring a common ledger. The shards receive sets of transactions from the mining pool. Under the Ethereum 2.0 proposal, these TX are split based on their transaction types. Miners then use an EVM to process shards’ data into a block and update the Merkle tree’s state on the beacon chain <span id="id5">[<a class="reference internal" href="#id63" title="Alexander Kudzin, Kentaroh Toyoda, Satoshi Takayama, and Atsushi Ishigame. Scaling ethereum 2.0 s cross-shard transactions with refined data structures. Cryptography, 6(4):57, 2022.">KTTI22</a>]</span>.</p>
+<p>In ethereum, data is distributed among several shard chains ([<a class="reference internal" href="#sharding-eth-near"><span class="std std-numref">Fig. 4</span></a>]) and each of these shard chains submit a record of transactions to the beacon chain or coordinating layer which coordinates and manages the shards by maintaining synchronization and ensuring a common ledger. The shards receive sets of transactions from the mining pool. Under the Ethereum 2.0 proposal, these TX are split based on their transaction types. Miners then use an EVM to process shards’ data into a block and update the Merkle tree’s state on the beacon chain <span id="id7">[<a class="reference internal" href="#id67" title="Alexander Kudzin, Kentaroh Toyoda, Satoshi Takayama, and Atsushi Ishigame. Scaling ethereum 2.0 s cross-shard transactions with refined data structures. Cryptography, 6(4):57, 2022.">KTTI22</a>]</span>.</p>
 </section>
 <section id="sharding-in-near-blockchain">
 <h3>Sharding in Near Blockchain<a class="headerlink" href="#sharding-in-near-blockchain" title="Permalink to this headline">#</a></h3>
-<p>Near’s sharding technique is called “Nightshade” <span id="id6">[<a class="reference internal" href="#id61" title="Near. Near nightshade whitepaper. Near, 2020. URL: https://near.org/papers/nightshade/.">Nea20a</a>]</span>. Although the full implementation is still in progress, the idea is instead having multiple subchains with a single beacon chain, data is divided into smaller partitions called chunks. Each chunk is processed by a different set of validators. The validators are randomly assigned to chunks and the assignment is done in a way that the same validator is not assigned to multiple chunks as shown in [<a class="reference internal" href="#sharding-eth-near"><span class="std std-numref">Fig. 4</span></a>]. At present the Near blockchain has 4 shards and the eventual plan is to have 100 shards <span id="id7">[<a class="reference internal" href="#id62" title="CornerstoneDAO. Nightshade sharding phase 1 launches— the next alpha is near. NearDAO, 2022. URL: https://medium.com/nearprotocol/near-launches-nightshade-sharding-phase-1-the-next-alpha-is-near-eafa108bc28c.">Cor22</a>]</span>.</p>
+<p>Near’s sharding technique is called “Nightshade” <span id="id8">[<a class="reference internal" href="#id65" title="Near. Near nightshade whitepaper. Near, 2020. URL: https://near.org/papers/nightshade/.">Nea20a</a>]</span>. Although the full implementation is still in progress, the idea is instead having multiple subchains with a single beacon chain, data is divided into smaller partitions called chunks. Each chunk is processed by a different set of validators. The validators are randomly assigned to chunks and the assignment is done in a way that the same validator is not assigned to multiple chunks as shown in [<a class="reference internal" href="#sharding-eth-near"><span class="std std-numref">Fig. 4</span></a>]. At present the Near blockchain has 4 shards and the eventual plan is to have 100 shards <span id="id9">[<a class="reference internal" href="#id66" title="CornerstoneDAO. Nightshade sharding phase 1 launches— the next alpha is near. NearDAO, 2022. URL: https://medium.com/nearprotocol/near-launches-nightshade-sharding-phase-1-the-next-alpha-is-near-eafa108bc28c.">Cor22</a>]</span>.</p>
 </section>
 </section>
 <section id="sharding-challenges">
@@ -613,6 +620,7 @@ title="Print to PDF"
 <section id="security">
 <h3>Security<a class="headerlink" href="#security" title="Permalink to this headline">#</a></h3>
 <p>In a 10-shard system, each shard’s security is reduced by a factor of 10 due to separate validator sets. Upon hard-forking a non-sharded chain with X validators into a sharded chain, each shard has X/10 validators. Consequently, compromising one shard necessitates corrupting only 5.1% (51% / 10) of the total validators. This is a significant reduction in security. To overcome this challenge, Ethereum uses a random beacon chain to assign validators to shards. Blockchains like Near and Algorand use Verifiable Random Functions (VRFs) to assign validators to shards. This ensures that the validators are randomly assigned to shards and the same validator is not assigned to multiple shards.</p>
+<p>Hafid et. al. <span id="id10">[<a class="reference internal" href="#id70" title="Abdelatif Hafid, Abdelhakim Senhaji Hafid, and Mustapha Samih. A tractable probabilistic approach to analyze sybil attacks in sharding-based blockchain protocols. IEEE Transactions on Emerging Topics in Computing, 2022.">HHS22</a>]</span> propose a Probabilistic Generating Function Analysis (PGFA) approach as an effective and tractable method to analyze the security of sharding-based blockchain protocols. They conclude that an increase in the number of Sybil IDs, network size, and ID Selection Pool(comprising of honest IDs and sybil IDs) size results in a higher failure probability, compromises network security which can lead to shard takeover atacks.</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"><strong>VRF</strong></p>
 <p>Verifiable Random Functions (VRFs) are a cryptographic primitive that allows a user to generate a random number that can be verified by anyone.</p>
@@ -620,7 +628,13 @@ title="Print to PDF"
 </section>
 <section id="cross-shard-communication">
 <h3>Cross-Shard Communication<a class="headerlink" href="#cross-shard-communication" title="Permalink to this headline">#</a></h3>
-<p>As the network gets divided up into multiple shards, it is important to ensure that the shards can communicate with each other to maintain consistency and interoperability. As seen in [<a class="reference internal" href="#cross-sharding"><span class="std std-numref">Fig. 5</span></a>], this can be problematic if there is forking within the shards and the block issuing the transaction is not included in the canonical chain. Both Near and Ethereum overcome this challenge by exchanging receipts between the shards. The receipts are used to prove that a transaction has been executed on a shard <span id="id8">[<a class="reference internal" href="#id64" title="Near. Near runtime spec. Near, 2020. URL: https://nomicon.io/RuntimeSpec/Receipts.">Nea20b</a>]</span> and the corresponding transaction can be executed on the other shard.</p>
+<p>As the network gets divided up into multiple shards, it is important to ensure that the shards can communicate with each other to maintain consistency and interoperability. As seen in [<a class="reference internal" href="#cross-sharding"><span class="std std-numref">Fig. 5</span></a>], this can be problematic if there is forking within the shards and the block issuing the transaction is not included in the canonical chain. Both Near and Ethereum overcome this challenge by exchanging receipts between the shards. The receipts are used to prove that a transaction has been executed on a shard <span id="id11">[<a class="reference internal" href="#id68" title="Near. Near runtime spec. Near, 2020. URL: https://nomicon.io/RuntimeSpec/Receipts.">Nea20b</a>]</span> and the corresponding transaction can be executed on the other shard. In Hedera Blockchain which uses a gossip protocol to exchange information between shards, each shard maintains a queue of outgoing messages for other shards. Messages are sent from one shard to another through nodes randomly contacting each other, along with proof of consensus. The process continues until the receiving shard confirms message processing with an updated sequence number in its shared state <span id="id12">[<a class="reference internal" href="#id69" title="Hedera. Hedera hashgraph whitepaper. Hedera, 2020. URL: https://hedera.com/hh_whitepaper_v2.1-20200815.pdf.">Hed20</a>]</span>. Instead of receipts, Hedera uses sequence number which is maintained by a shard for each other shard as a proof of latest execution message.</p>
+<figure class="align-default" id="cross-sharding">
+<a class="reference internal image-reference" href="_images/cross-shard.png"><img alt="_images/cross-shard.png" src="_images/cross-shard.png" style="width: 350px; height: 230px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Cross-Shard Communication</span><a class="headerlink" href="#cross-sharding" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="data-availability">
 <h3>Data Availability<a class="headerlink" href="#data-availability" title="Permalink to this headline">#</a></h3>
@@ -630,12 +644,6 @@ verify the validaity of data. To overcome this problem, erasure coding is used t
 <p class="sidebar-title"><strong>Erasure Codes</strong></p>
 <p>Erasure codes allow a piece of data M chunks long to be expanded into a piece of data N chunks long (“chunks” can be of arbitrary size), such that any M of the N chunks can be used to recover the original data.</p>
 </aside>
-<figure class="align-default" id="cross-sharding">
-<a class="reference internal image-reference" href="_images/cross-shard.png"><img alt="_images/cross-shard.png" src="_images/cross-shard.png" style="width: 350px; height: 230px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Cross-Shard Communication</span><a class="headerlink" href="#cross-sharding" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
 </section>
 </section>
 <section id="conclusion">
@@ -646,30 +654,42 @@ verify the validaity of data. To overcome this problem, erasure coding is used t
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
-<div class="docutils container" id="id9">
+<div class="docutils container" id="id13">
 <dl class="citation">
-<dt class="label" id="id62"><span class="brackets"><a class="fn-backref" href="#id7">Cor22</a></span></dt>
+<dt class="label" id="id66"><span class="brackets"><a class="fn-backref" href="#id9">Cor22</a></span></dt>
 <dd><p>CornerstoneDAO. Nightshade sharding phase 1 launches— the next alpha is near. <em>NearDAO</em>, 2022. URL: <a class="reference external" href="https://medium.com/nearprotocol/near-launches-nightshade-sharding-phase-1-the-next-alpha-is-near-eafa108bc28c">https://medium.com/nearprotocol/near-launches-nightshade-sharding-phase-1-the-next-alpha-is-near-eafa108bc28c</a>.</p>
 </dd>
-<dt class="label" id="id57"><span class="brackets"><a class="fn-backref" href="#id4">DDL+19</a></span></dt>
+<dt class="label" id="id61"><span class="brackets"><a class="fn-backref" href="#id6">DDL+19</a></span></dt>
 <dd><p>Hung Dang, Tien Tuan Anh Dinh, Dumitrel Loghin, Ee-Chien Chang, Qian Lin, and Beng Chin Ooi. Towards scaling blockchain systems via sharding. In <em>Proceedings of the 2019 international conference on management of data</em>, 123–140. 2019.</p>
 </dd>
-<dt class="label" id="id58"><span class="brackets"><a class="fn-backref" href="#id2">KKJG+18</a></span></dt>
+<dt class="label" id="id70"><span class="brackets"><a class="fn-backref" href="#id10">HHS22</a></span></dt>
+<dd><p>Abdelatif Hafid, Abdelhakim Senhaji Hafid, and Mustapha Samih. A tractable probabilistic approach to analyze sybil attacks in sharding-based blockchain protocols. <em>IEEE Transactions on Emerging Topics in Computing</em>, 2022.</p>
+</dd>
+<dt class="label" id="id69"><span class="brackets"><a class="fn-backref" href="#id12">Hed20</a></span></dt>
+<dd><p>Hedera. Hedera hashgraph whitepaper. <em>Hedera</em>, 2020. URL: <a class="reference external" href="https://hedera.com/hh_whitepaper_v2.1-20200815.pdf">https://hedera.com/hh_whitepaper_v2.1-20200815.pdf</a>.</p>
+</dd>
+<dt class="label" id="id71"><span class="brackets"><a class="fn-backref" href="#id1">HPZ+22</a></span></dt>
+<dd><p>Huawei Huang, Xiaowen Peng, Jianzhou Zhan, Shenyang Zhang, Yue Lin, Zibin Zheng, and Song Guo. Brokerchain: a cross-shard blockchain protocol for account/balance-based state sharding. In <em>IEEE INFOCOM 2022-IEEE Conference on Computer Communications</em>, 1968–1977. IEEE, 2022.</p>
+</dd>
+<dt class="label" id="id62"><span class="brackets"><a class="fn-backref" href="#id4">KKJG+18</a></span></dt>
 <dd><p>Eleftherios Kokoris-Kogias, Philipp Jovanovic, Linus Gasser, Nicolas Gailly, Ewa Syta, and Bryan Ford. Omniledger: a secure, scale-out, decentralized ledger via sharding. In <em>2018 IEEE Symposium on Security and Privacy (SP)</em>, 583–598. IEEE, 2018.</p>
 </dd>
-<dt class="label" id="id63"><span class="brackets"><a class="fn-backref" href="#id5">KTTI22</a></span></dt>
+<dt class="label" id="id67"><span class="brackets"><a class="fn-backref" href="#id7">KTTI22</a></span></dt>
 <dd><p>Alexander Kudzin, Kentaroh Toyoda, Satoshi Takayama, and Atsushi Ishigame. Scaling ethereum 2.0 s cross-shard transactions with refined data structures. <em>Cryptography</em>, 6(4):57, 2022.</p>
 </dd>
-<dt class="label" id="id60"><span class="brackets"><a class="fn-backref" href="#id1">LNZ+16</a></span></dt>
+<dt class="label" id="id64"><span class="brackets"><a class="fn-backref" href="#id3">LNZ+16</a></span></dt>
 <dd><p>Loi Luu, Viswesh Narayanan, Chaodong Zheng, Kunal Baweja, Seth Gilbert, and Prateek Saxena. A secure sharding protocol for open blockchains. In <em>Proceedings of the 2016 ACM SIGSAC conference on computer and communications security</em>, 17–30. 2016.</p>
 </dd>
-<dt class="label" id="id61"><span class="brackets"><a class="fn-backref" href="#id6">Nea20a</a></span></dt>
+<dt class="label" id="id65"><span class="brackets"><a class="fn-backref" href="#id8">Nea20a</a></span></dt>
 <dd><p>Near. Near nightshade whitepaper. <em>Near</em>, 2020. URL: <a class="reference external" href="https://near.org/papers/nightshade/">https://near.org/papers/nightshade/</a>.</p>
 </dd>
-<dt class="label" id="id64"><span class="brackets"><a class="fn-backref" href="#id8">Nea20b</a></span></dt>
+<dt class="label" id="id68"><span class="brackets"><a class="fn-backref" href="#id11">Nea20b</a></span></dt>
 <dd><p>Near. Near runtime spec. <em>Near</em>, 2020. URL: <a class="reference external" href="https://nomicon.io/RuntimeSpec/Receipts">https://nomicon.io/RuntimeSpec/Receipts</a>.</p>
 </dd>
-<dt class="label" id="id59"><span class="brackets"><a class="fn-backref" href="#id3">ZMR18</a></span></dt>
+<dt class="label" id="id72"><span class="brackets"><a class="fn-backref" href="#id2">TG22</a></span></dt>
+<dd><p>Deepal Tennakoon and Vincent Gramoli. Dynamic blockchain sharding. In <em>5th International Symposium on Foundations and Applications of Blockchain 2022 (FAB 2022)</em>. Schloss Dagstuhl-Leibniz-Zentrum für Informatik, 2022.</p>
+</dd>
+<dt class="label" id="id63"><span class="brackets"><a class="fn-backref" href="#id5">ZMR18</a></span></dt>
 <dd><p>Mahdi Zamani, Mahnush Movahedi, and Mariana Raykova. Rapidchain: scaling blockchain via full sharding. In <em>Proceedings of the 2018 ACM SIGSAC conference on computer and communications security</em>, 931–948. 2018.</p>
 </dd>
 </dl>
