@@ -1,5 +1,7 @@
 # Sharding: A Panacea for Blockchain Scalability Challenges?
 
+<ins>**Innovation & Ideation**</ins>
+
 ```{admonition} Key Insights
 :class: tip
 - Sharding is a promising scaling technique for blockchains, dividing the network into smaller partitions called shards to process transactions in parallel, thus increasing throughput.
